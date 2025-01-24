@@ -39,18 +39,79 @@
                     </li>
                 </ul>
             </li>
-            <li class="header-navigation__item"><a href="#" class="header-navigation__link">Activity</a></li>
-            <li class="header-navigation__item"><a href="#" class="header-navigation__link">Community</a></li>
-            <li class="header-navigation__item"><a href="#" class="header-navigation__link">Pages</a></li>
-            <li class="header-navigation__item"><a href="#" class="header-navigation__link">Contact</a></li>
+
+            <li class="header-navigation__item">
+                <span class="header-navigation__link">Activity
+                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
+                </span>
+                <ul class="header-navigation__sublist">
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header-navigation__item">
+                <span class="header-navigation__link">Community
+                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
+                </span>
+                <ul class="header-navigation__sublist">
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header-navigation__item">
+                <span class="header-navigation__link">Pages
+                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
+                </span>
+                <ul class="header-navigation__sublist">
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header-navigation__item">
+                <span class="header-navigation__link">Contact
+                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
+                </span>
+                <ul class="header-navigation__sublist">
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+                    </li>
+                    <li class="header-navigation__subitem">
+                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+                    </li>
+                </ul>
+            </li>
           </ul>
         </nav>
         <div class="header-actions">
-            <form class="form-search" action="/search" method="post">
-                <label class="hidden" for="search">Search</label>
-                <img src="images/icons/search.svg" alt="search" width="18" height="18">
-                <input class="input hidden" type="search" id="search" placeholder="Search" aria-label="Search" name="search">
-              </form>
+            <form class="form-search">
+                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search" >
+                <label class="form-search__label" for="search"><img src="images/icons/search.svg" alt="search" width="18" height="18"></label>
+                <button class="form-search__btn" type="submit"><img src="images/icons/search.svg" alt="search" width="18" height="18"></button>
+            </form>
           <a href="#" class="btn btn--primary">
             <img src="images/icons/wallet.svg" alt="wallet" width="18" height="18">
             Add payment Method
@@ -59,6 +120,61 @@
       </header>
 
     <main class="main">
+        <section class="intro">
+            <div class="intro__wrapper container">
+                <h1 class="intro__title">Contact Us</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Home</a></li>
+                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Explore</a></li>
+                    <li class="breadcrumb__item">Item Details 1</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <main class="login">
+            <div class="login__wrapper container--mini">
+                <h2 class="login__title">Login to Deliverlay</h2>
+                <p class="login__subtitle">Login with social</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn btn--primary">
+                        <img src="images/icons/google.svg" alt="google" width="18" height="18">
+                        Google
+                    </a>
+                    <a href="#" class="btn btn--primary">
+                        <img src="images/icons/facebook.svg" alt="facebook" width="18" height="18">
+                        Facebook
+                    </a>
+                </div>
+                <p class="login__subtitle">Or Login with email</p>
+                <form class="login__form" action="/" method="post" name="login-form">
+                    <div class="form-control">
+                      <label class="hidden" for="name">Your Full Name</label>
+                      <input type="text" id="name" name="name" class="input" placeholder="Your Full Name" minlength="3" required>
+                    </div>
+                    <div class="form-control">
+                      <label class="hidden" for="email">Your Email Address</label>
+                      <input type="email" id="email" class="input" name="email" placeholder="Your Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    </div>
+
+                    <label class="checkbox">
+                        <input type="checkbox" class="hidden checkbox__input" id="newsletter" name="newsletter" required>
+                        <span class="checkbox__inner">
+                            <span class="checkbox__box"></span>
+                            <span class="checkbox__text">Remember me</span>
+                        </span>
+                    </label>
+                    <button class="btn btn--full btn--secondary" type="submit">Login</button>
+                    <a href="#" class="login__link">Forgot Password</a>
+                </form>
+            </div>
+        </main>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
         <br>
@@ -95,6 +211,8 @@
       
       
     </main>
+
+    
     
     
 

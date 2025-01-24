@@ -30,6 +30,35 @@ body {
   word-break: break-word;
 }
 
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  color: var(--color-grey-0);
+  list-style-type: none;
+  &__item {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "/";
+      top: 0;
+      left: -15px;
+      color: var(--color-grey-1);
+    }
+  }
+  &__item:first-child::before {
+    display: none;
+  }
+  &__link {
+    color: var(--color-grey-1);
+    text-decoration: none;
+  }
+
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -44,6 +73,13 @@ body {
   line-height: 18px;
   color: var(--color-grey-0);
   text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  &-wrapper {
+    display: flex;
+    gap: 36px;
+  }
   &--primary {
     gap: 6px;
     padding: 14px 24px;
@@ -102,12 +138,80 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-grey-3);
+  }
+  &__box:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../images/icons/checkbox-arrow.svg");
+    background-position: center;
+    background-size: 8px 6px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: var(--color-white);
+  }
+}
+
+
 .container {
   width: 100%;
   padding: 0 255px;
   max-width: var(--screen-width);
   margin: 0 auto;
   min-width: var(--min-screen-width);
+  &--mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    min-width: none;
+  }
 }
 
 
@@ -150,6 +254,64 @@ body {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.form-search {
+  line-height: 2em;
+  border-radius: 1em;
+  float: right;
+  margin: .5em .5em .5em auto;
+  overflow: hidden;
+  display: flex;  
+  transition: all 1s linear;
+  &:focus-within {
+    border-radius: .5em;
+    background: rgba(255, 255, 255, .5);
+  }
+  &__label, 
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    width: 46px;
+    height: 46px;
+    overflow: hidden;
+    transition: width 1s step-end;
+    background-color: var(--color-grey-6);
+    border-radius: 50%;
+    &:hover {
+      outline: 1px solid var(--color-btn-primary);
+    }
+  }
+  &__input,
+  &__btn {
+    border: none;
+    width: 0;
+    padding: 0;
+    background: transparent;
+    outline: none;
+  }
+  &__input {
+    transition: width 1s linear;
+    &:focus {
+      width: 13em;
+      padding-right: .25em;
+    }
+  }
+  &:focus-within &__input {
+    width: 13em;
+  }
+  &__btn {
+    width: 0;
+    font: inherit;
+  }
+  &__input:focus ~ &__btn {
+    width: 2em;
+  }
+  &__input:focus ~ &__label {
+    width: 0;
   }
 }
 
@@ -230,6 +392,107 @@ body {
   left: -9999px;
 }
 
+.input {
+  width: 100%;
+  padding: 13px 20px;
+  border-radius: 8px;
+  background-color: var(--color-grey-5);
+  outline: 1px solid var(--color-grey-3);
+  border: none;
+  &::placeholder {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: var(--color-grey-1);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-grey-5);
+  z-index: 10;
+  &:before {
+    background-image: url(../../images/content/bg-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: 0;
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    color: var(--color-white);
+    text-align: center;
+  }
+  &__wrapper {
+    z-index: 10;
+  }
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-grey-5);
+  &__form {
+    width: 100%;
+  }
+  &__link {
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22.4px;
+    text-align: center;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    color: var(--color-white);
+    text-align: center;
+  }
+  &__subtitle {
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    line-height: 25.2px;
+    color: var(--color-grey-1);
+    text-align: center;
+    text-transform: capitalize;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 25%;
+      height: 1px;
+      background-color: var(--color-grey-3);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 25%;
+      height: 1px;
+      background-color: var(--color-grey-3);
+    }
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -259,19 +522,7 @@ body {
     border-radius: 11px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-  }
-  &__input {
-    flex-grow: 1;
-    border: 0;
-    outline: 0;
-    padding: 18px;
-    background-color: var(--color-grey-6);
-    color: var(--color-grey-1);
-    font-family: Urbanist;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18.2px;
+    overflow: hidden;
   }
   &__btn {
     flex-shrink: 0;
@@ -280,8 +531,25 @@ body {
     width: 56px;
     height: 54px;
     background-color: var(--color-btn-primary);
-    border: 1px solid var(--color-grey-6);
     border-radius: 0 11px 11px 0;
+  }
+  &__input {
+    flex-grow: 1;
+    border: 0;
+    outline: 0;
+    padding: 18px;
+    background-color: var(--color-grey-6);
+    color: var(--color-grey-0);
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    &::placeholder {
+      color: var(--color-grey-1);
+    }
+    &:hover {
+      background-color: var(--color-grey-3);
+    }
   }
 }
 
