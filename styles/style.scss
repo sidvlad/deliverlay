@@ -607,13 +607,24 @@ body {
 }
 
 .picks {
+  &__block {
+    flex-grow: 1;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  &__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-grey-3);
+  }
   &__image {
-    max-width: 279px;
+    position: relative;
+    max-width: 297px;
     max-height: 290px;
     border-radius: 8px;
   }
@@ -621,16 +632,81 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 20%;
-    gap: 17px;
     background-color: var(--color-grey-4);
     padding: 20px;
     border-radius: 20px;
+  }
+  &__likes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px 8px 8px;
+    border-radius: 8px;
+    background-color: rgba(28, 28, 40, 0.8);
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-grey-6);
+    border-radius: 8px;
+  }
+  &__marks {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color-white);
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: var(--color-grey-7);
+  }
+  &__price {
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-btn-primary);
+  }
+  &__quote {
+    max-width: 297px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--color-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px 8px 8px;
+    border-radius: 8px;
+    background-color: rgba(28, 28, 40, 0.8);
+  }
+  &__type {
+    font-size: 14px;
+    line-height: 22.4px;
+    color: var(--color-grey-1);
   }
   &__title {
     font-size: 36px;
