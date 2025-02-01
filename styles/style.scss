@@ -8,6 +8,9 @@ body {
   --color-grey-0: #FAFAFC;
   --color-white: #FFFFFF;
   --color-grey-7: #EBEBEB;
+  --color-grey-8: #2F2C2C;
+
+  --color-green-0: #A4C639;
 
   --color-btn-primary: #5142FC;
   --color-btn-hover: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
@@ -163,6 +166,44 @@ body {
       fill: var(--color-grey-3);
     }
   }
+  &--app {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    width: 50%;
+    background-color: var(--color-grey-4);
+    padding: 12px;
+    border-radius: 12px;
+    column-gap: 6px;
+    &:last-child {
+      & .btn--app-icon {
+        background-color: var(--color-green-0);
+      }
+    }
+    &-icon {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      align-items: center;
+      grid-row: span 2;
+      background-color: var(--color-grey-8);
+      border-radius: 12px;
+    }
+    &-description {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      color: var(--color-grey-7);
+      opacity: .8;
+    }
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: var(--color-grey-1);
+      opacity: 1;
+    }
+  }
   &--big {
     gap: 10px;
     padding: 16px 36px;
@@ -217,6 +258,7 @@ body {
 .btn-wrapper {
   width: 100%;
   display: flex;
+  gap: 16px;
   &--gap {
     gap: 36px;
   }
@@ -333,11 +375,21 @@ body {
     flex-basis: 50%;
     flex-direction: column;
     justify-content: flex-start;
+    row-gap: 24px;
   }
   &__description {
     font-size: 14px;
     line-height: 22.4px;
     color: var(--color-grey-1);
+  }
+  &__stat {
+    display: flex;
+    align-items: center;
+    padding: 7px 14px;
+    color: var(--color-grey-2);
+    gap: 6px;
+    border-radius: 40px;
+    background-color: var(--color-grey-4);
   }
   &__stats {
     display: flex;
@@ -346,7 +398,25 @@ body {
   }
   &__stats-item {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+  &__timer {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    background-color: var(--color-grey-4);
+    border-radius: 8px;
+    color: var(--color-grey-1);
+  }
+  &__time {
+    font-size: 16px;
+  }
+
   &__title {
     margin: 0;
     font-size: 36px;
