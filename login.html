@@ -154,17 +154,17 @@
                 </div>
                 <p class="login__subtitle">Or Login with email</p>
                 <form class="login__form" action="/" method="post" name="login-form">
-                    <div class="form-control">
+                    <div class="form-control form-control--input">
                       <label class="hidden" for="name">Your Full Name</label>
                       <input type="text" id="name" name="name" class="input" placeholder="Your Full Name" minlength="3" required>
                     </div>
-                    <div class="form-control">
+                    <div class="form-control form-control--input">
                       <label class="hidden" for="email">Your Email Address</label>
                       <input type="email" id="email" class="input" name="email" placeholder="Your Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </div>
 
                     <label class="checkbox">
-                        <input type="checkbox" class="hidden checkbox__input" id="newsletter" name="newsletter" required>
+                        <input type="checkbox" class="hidden checkbox__input" id="remember" name="remember" required>
                         <span class="checkbox__inner">
                             <span class="checkbox__box"></span>
                             <span class="checkbox__text">Remember me</span>
