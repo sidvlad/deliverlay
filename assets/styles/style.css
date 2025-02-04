@@ -1,20 +1,21 @@
 body {
-  --color-grey-6: #0D0D11;
-  --color-grey-5: #14141F;
-  --color-grey-4: #1C1C28;
-  --color-grey-4-transparent: #1C1C2880;
-  --color-grey-3: #343444;
-  --color-grey-3-transparent: #34344480;
-  --color-grey-2: #555770;
-  --color-grey-1: #8A8AA0;
-  --color-grey-0: #FAFAFC;
   --color-white: #FFFFFF;
-  --color-grey-7: #EBEBEB;
-  --color-grey-8: #2F2C2C;
   --color-green-0: #A4C639;
   --color-btn-primary: #5142FC;
-  --color-gradient: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
   --color-error: #F94800;
+  --color-grey-0: #FAFAFC;
+  --color-grey-1: #8A8AA0;
+  --color-grey-2: #555770;
+  --color-grey-3: #343444;
+  --color-grey-3-transparent: #34344480;
+  --color-grey-4: #1C1C28;
+  --color-grey-4-transparent: #1C1C2880;
+  --color-grey-5: #14141F;
+  --color-grey-6: #0D0D11;
+  --color-grey-7: #EBEBEB;
+  --color-grey-8: #2F2C2C;
+  --color-grey-9: #1F1F2C;
+  --color-gradient: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
   --transition-hover: color .3s, background-color .3s, outline .3s;
   --screen-width: 1920px;
   --min-screen-width: 1920px;
@@ -639,16 +640,16 @@ body {
 }
 
 .form-search {
-  line-height: 2em;
-  border-radius: 1em;
-  float: right;
-  margin: 0.5em 0.5em 0.5em auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
   overflow: hidden;
   display: flex;
-  transition: all 1s linear;
+  transition: width 1s linear;
 }
 .form-search:focus-within {
-  border-radius: 0.5em;
+  border-radius: 30px;
   background: rgba(255, 255, 255, 0.5);
 }
 .form-search__label, .form-search__btn {
@@ -699,17 +700,20 @@ body {
   align-items: center;
   gap: 125.5px;
   padding-top: 12px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--color-grey-3);
 }
 
 .header-actions {
+  position: relative;
   display: flex;
   gap: 24px;
+  padding-left: 70px;
 }
 
 .header-navigation__list {
   display: flex;
-  gap: 14.6px;
+  gap: 16.5px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -837,8 +841,8 @@ body {
   text-align: center;
 }
 .intro__wrapper {
-  padding-top: 63px;
-  padding-bottom: 77px;
+  padding-top: 70px;
+  padding-bottom: 45px;
   z-index: 10;
 }
 
@@ -898,6 +902,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-grey-5);
 }
 .login__form {
@@ -920,7 +926,6 @@ body {
 }
 .login__title {
   margin: 0;
-  padding-top: 30px;
   padding-bottom: 18px;
   font-size: 36px;
   font-weight: 700;
@@ -931,28 +936,26 @@ body {
 .login__subtitle {
   width: 100%;
   position: relative;
-  margin-bottom: 23px;
+  margin: 0;
   font-size: 18px;
   line-height: 25.2px;
   color: var(--color-grey-1);
   text-align: center;
   text-transform: capitalize;
 }
+.login__subtitle span {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: var(--color-grey-5);
+  z-index: 10;
+  position: relative;
+}
 .login__subtitle::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 0;
-  width: 25%;
-  height: 1px;
-  background-color: var(--color-grey-3);
-}
-.login__subtitle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 25%;
+  width: 100%;
   height: 1px;
   background-color: var(--color-grey-3);
 }
@@ -1246,6 +1249,58 @@ body {
 }
 .subscribe__input:hover {
   background-color: var(--color-grey-3);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+.tabs__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: 2px solid var(--color-grey-9);
+}
+.tabs__link {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  text-decoration: none;
+  color: var(--color-grey-1);
+  transition: opacity 0.3s ease;
+}
+.tabs__item {
+  padding: 0 12px 10px;
+  position: relative;
+  cursor: pointer;
+}
+.tabs__item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-white);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.tabs__item:hover > .tabs__link {
+  color: var(--color-white);
+}
+.tabs__item:hover:after {
+  opacity: 1;
+}
+
+.tabs__content:not(:target),
+:target ~ .tabs__content.tabs__content--active {
+  display: none;
+}
+
+.tabs__content:target,
+.tabs__content.tabs__content--active {
+  display: block;
 }
 
 .title {
