@@ -14,9 +14,9 @@
 </head>
   <body>
     <header class="header container">
-        <span>
+        <a href="index.html">
           <img src="images/icons/logo.svg" alt="Deliverlay logo header" class="header__logo" width="201" height="46">
-        </span>
+        </a>
         <nav class="header-navigation">
           <ul class="header-navigation__list">
             <li class="header-navigation__item header-navigation__item--active">
@@ -134,9 +134,9 @@
                 </div>
                 <div class="contact__block">
                     <h2 class="contact__title">Drop up a message</h2>
-                    <p class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati
+                    <h3 class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati
                         dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
-                    </p>
+                    </h3>
                     <form class="contact__form" action="/" method="post" name="contact-form">
                         <div class="form-control form-control--input">
                             <label class="hidden" for="name">Your Full Name</label>
@@ -148,8 +148,8 @@
                         </div>
                         <div class="form-control">
                         <label class="hidden" for="sort">Select subject</label>
-                        <select class="input select" placeholder="Select subject" name="sort" id="sort">
-                            <option class="select__option" value="inquiry">General Inquiry</option>
+                        <select class="input select" name="sort" id="sort">
+                            <option class="select__option" value="inquiry">Select subject</option>
                             <option class="select__option" value="option-one">Option One</option>
                             <option class="select__option" value="option-two">Option Two</option>
                             <option class="select__option" value="option-three">Option Three</option>
@@ -167,7 +167,9 @@
         </main>
     <footer class="footer container">
         <div class="footer__logo">
-            <img src="images/icons/logo.svg" alt="Deliverlay footer logo" width="201" height="46">
+            <a href="index.html">
+                <img src="images/icons/logo.svg" alt="Deliverlay footer logo" width="201" height="46">
+            </a>
             <p class="footer__description">Lorem ipsum dolor sit amet,consectetur
                 adipisicing elit. Quis non, fugit totam vel
                 laboriosam vitae.
@@ -227,7 +229,5 @@
             </div>
         </form>
     </footer>
-
-
   </body>
 </html>
