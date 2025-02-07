@@ -1,3 +1,21 @@
+@keyframes move {
+	0% {
+		margin-left: 0;
+	}
+  25% {
+    margin-left: 10px;
+  }
+	50% {
+		margin-left: 25px;
+	}
+  75% {
+    margin-left: 35px;
+  }
+	100% {
+		margin-left: 50px;
+	}
+}
+
 body {
   --color-white: #FFFFFF;
   --color-green-0: #A4C639;
@@ -18,12 +36,9 @@ body {
   --color-grey-9: #1F1F2C;
   --color-gradient: linear-gradient(216.56deg, #E250E5 5.32%, #4B50E6 94.32%);
 
-
-
-
   --transition-hover: color .3s, background-color .3s, background .3s, outline .3s;
-  --screen-width: 1920px;
-  --min-screen-width: 1920px;
+  --screen-width: 1440px;
+  --min-screen-width: 1440px;
 
   font-family: "Urbanist", serif;
   font-size: 18px;
@@ -42,13 +57,17 @@ body {
   position: relative;
   display: flex;
   z-index: 10;
-  column-gap: 45px;
+  gap: 30px;
   &__item {
-    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    &:first-child {
+      margin-right: 40px;
+    }
   }
   &__icon {
     display: flex;
@@ -73,13 +92,14 @@ body {
   }
   &__title {
     margin: 0;
-    padding-top: 12px;
+    padding-top: 13px;
     padding-bottom: 2px;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
     color: var(--color-white);
     text-align: center;
+    text-transform: capitalize;
   }
   &__description {
     margin: 0;
@@ -94,6 +114,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 31px;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 25.2px;
@@ -105,7 +127,7 @@ body {
       position: absolute;
       content: "/";
       top: 0;
-      left: -15px;
+      left: -19px;
       color: var(--color-grey-1);
     }
   }
@@ -226,6 +248,12 @@ body {
       height: 24px;
     }
   }
+  &--strong {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20.4px;
+    outline-width: 2px;
+  }
   &--full {
     width: 100%;
   }
@@ -337,6 +365,7 @@ body {
   &__inner {
     display: flex;
     gap: 8px;
+    margin: 12px 0 15px 0;
   }
   &__box {
     position: relative;
@@ -468,8 +497,8 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 255px;
-  padding-right: 255px;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: var(--screen-width);
   margin: 0 auto;
   min-width: var(--min-screen-width);
@@ -611,7 +640,7 @@ body {
   padding-top: 85px;
   padding-bottom: 82px;
   &__description {
-    margin: 7px 0 24px 0;
+    margin: 7px 0 23px 0;
     font-size: 14px;
     line-height: 22px;
     white-space: pre-line;
@@ -732,8 +761,12 @@ body {
     opacity: 0;
   }
   &:hover {
+    outline: 1px solid var(--color-btn-primary);
+  }
+  &--active {
     width: 292px;
     outline: 1px solid var(--color-btn-primary);
+    cursor: pointer;
     &:after {
       opacity: 1;
     }
@@ -883,6 +916,7 @@ body {
   }
   &__title {
     margin: 0;
+    margin-bottom: 13px;
     font-size: 36px;
     font-weight: 700;
     line-height: 43.2px;
@@ -890,7 +924,7 @@ body {
     text-align: center;
   }
   &__wrapper {
-    padding-top: 70px;
+    padding-top: 72px;
     padding-bottom: 45px;
     z-index: 10;
   }
@@ -955,7 +989,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 85px;
   padding-bottom: 60px;
   background-color: var(--color-grey-5);
   &__form {
@@ -976,9 +1010,11 @@ body {
       text-decoration: underline;
     }
   }
+  &__password {
+    margin-top: 40px;
+  }
   &__title {
     margin: 0;
-    padding-bottom: 18px;
     font-size: 36px;
     font-weight: 700;
     line-height: 43.2px;
@@ -988,7 +1024,7 @@ body {
   &__subtitle {
     width: 100%;
     position: relative;
-    margin: 0;
+    margin: 35px 0 24px 0;
     font-size: 18px;
     line-height: 25.2px;
     color: var(--color-grey-1);
@@ -1020,7 +1056,7 @@ body {
 
 .picks {
   padding-top: 62px;
-  padding-bottom: 60px;
+  padding-bottom: 58px;
   background-color: var(--color-grey-5);
   &__block {
     flex-grow: 1;
@@ -1051,7 +1087,7 @@ body {
     border-bottom: 1px solid var(--color-grey-3);
   }
   &__image {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     position: relative;
     max-width: 297px;
     width: 297px;
@@ -1090,14 +1126,15 @@ body {
     flex-wrap: wrap;
     margin-bottom: 38px;
     column-gap: 20px;
-    row-gap: 17px;
+    row-gap: 21px;
   }
   &__list-promotions {
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    margin-left: -370px;
     & .picks__image {
       width: 300px;
       min-width: 300px;
@@ -1114,7 +1151,7 @@ body {
   }
   &__marks {
     position: absolute;
-    bottom: 4px;
+    bottom: 6px;
     left: 6px;
     display: flex;
     gap: 9px;
@@ -1264,10 +1301,10 @@ body {
   }
   &__name {
     margin: 0;
-    padding-top: 6px;
+    padding-top: 9px;
     font-size: 20px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 20px;
     color: var(--color-white);
   }
   &__time {
@@ -1276,12 +1313,13 @@ body {
     line-height: 22.4px;
     color: var(--color-grey-1);
   }
-  &__time time {
-    margin-left: 6px;
+  &__time span {
+    margin-left: 3px;
     font-weight: 700;
     line-height: 16.8px;
     letter-spacing: 0.1em;
     color: var(--color-grey-7);
+    text-transform: uppercase;
   }
 }
 
@@ -1324,6 +1362,9 @@ body {
       outline: 1px solid var(--color-white);
       opacity: 0;
       transition: opacity 0.3s ease;
+    }
+    &:hover {
+      background-color: var(--color-white);
     }
     &--active {
       background-color: var(--color-white);
@@ -1403,6 +1444,16 @@ body {
     height: 54px;
     background-color: var(--color-btn-primary);
     border-radius: 0 11px 11px 0;
+    &:hover {
+      cursor: pointer;
+      .subscribe__icon {
+        animation-direction: alternate-reverse;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+      }
+    }
   }
   &__input {
     flex-grow: 1;

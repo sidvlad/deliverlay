@@ -105,9 +105,8 @@
         </nav>
         <div class="header-actions">
             <form class="form-search">
-                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search" >
-                <label class="form-search__label" for="search"><img src="images/icons/search.svg" alt="search" width="18" height="18"></label>
-                <button class="form-search__btn" type="submit"><img src="images/icons/search.svg" alt="search" width="18" height="18"></button>
+                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search">
+                <label class="hidden" for="search"></label>
             </form>
           <a href="#" class="btn btn--primary">
             <img src="images/icons/wallet.svg" alt="wallet" width="18" height="18">
@@ -156,9 +155,9 @@
                             <span class="checkbox__text">Remember me</span>
                         </span>
                     </label>
-                    <button class="btn btn--full btn--secondary" type="submit">Login</button>
+                    <button class="btn btn--full btn--secondary btn--strong" type="submit">Login</button>
                 </form>
-                <div class="login__wrapper">
+                <div class="login__password">
                     <a href="#" class="login__link">Forgot Password</a>
                 </div>
             </div>
@@ -221,7 +220,7 @@
             <div class="subscribe__wrapper">
                 <input class="subscribe__input" type="email" id="subscribe" name="email" placeholder="Info@yourgmail.com" required>
                 <button class="subscribe__btn" type="submit">
-                    <img src="images/icons/send.svg" width="24" height="24" alt="get subscribed">
+                    <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
                 </button>
             </div>
         </form>
