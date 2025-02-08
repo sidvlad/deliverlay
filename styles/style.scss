@@ -204,7 +204,7 @@ body {
     background-color: var(--color-grey-4);
     padding: 12px;
     border-radius: 12px;
-    column-gap: 6px;
+    column-gap: 12px;
     &:last-child {
       & .btn--app-icon {
         background-color: var(--color-green-0);
@@ -328,6 +328,9 @@ body {
     height: 36px;
     border-radius: 50%;
     background-color: var(--color-grey-4);
+    &:hover {
+      background-color: var(--color-grey-3);
+    }
   }
 }
 
@@ -350,11 +353,14 @@ body {
 }
 
 .catalog {
-  display: flex;
-  gap: 29px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 84px;
   background-color: var(--color-grey-5);
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 31px;
+  }
 }
 
 .checkbox {
@@ -364,8 +370,10 @@ body {
   cursor: pointer;
   &__inner {
     display: flex;
-    gap: 8px;
-    margin: 12px 0 15px 0;
+    gap: 10px;
+    &--login {
+      margin: 12px 0 15px 0;
+    }
   }
   &__box {
     position: relative;
@@ -397,6 +405,7 @@ body {
   &__text {
     font-size: 14px;
     line-height: 22.4px;
+    font-weight: 400;
     color: var(--color-white);
   }
 }
@@ -420,7 +429,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  gap: 16px;
+  gap: 13px;
   width: 330px;
   &__item {
     border-radius: 6px;
@@ -429,7 +438,8 @@ body {
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    column-gap: 26px;
+    row-gap: 8px;
   }
   &__header {
     position: relative;
@@ -452,7 +462,7 @@ body {
       content: "";
       position: absolute;
       top: 50%;
-      right: 14px;
+      right: 12px;
       transform: translateY(-50%);
       width: 10px;
       height: 10px;
@@ -513,7 +523,7 @@ body {
 .details {
   display: flex;
   column-gap: 72px;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 60px;
   &__block {
     display: flex;
@@ -523,6 +533,7 @@ body {
     row-gap: 24px;
   }
   &__description {
+    margin: 0;
     font-size: 14px;
     line-height: 22.4px;
     color: var(--color-grey-1);
@@ -532,8 +543,10 @@ body {
     align-items: center;
     padding: 7px 14px;
     color: var(--color-grey-2);
-    gap: 6px;
+    gap: 7px;
     border-radius: 40px;
+    font-size: 14px;
+    line-height: 22.4px;
     background-color: var(--color-grey-4);
   }
   &__stats {
@@ -1125,7 +1138,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 38px;
-    column-gap: 20px;
+    column-gap: 19px;
     row-gap: 21px;
   }
   &__list-promotions {
@@ -1225,6 +1238,9 @@ body {
     font-weight: 700;
     line-height: 43.2px;
     color: var(--color-white);
+  }
+  &--catalog {
+    padding-top: 0;
   }
 }
 
