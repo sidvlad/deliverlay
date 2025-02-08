@@ -2,15 +2,6 @@
 	0% {
 		margin-left: 0;
 	}
-  25% {
-    margin-left: 10px;
-  }
-	50% {
-		margin-left: 25px;
-	}
-  75% {
-    margin-left: 35px;
-  }
 	100% {
 		margin-left: 50px;
 	}
@@ -204,6 +195,9 @@ body {
     padding: 12px;
     border-radius: 12px;
     column-gap: 12px;
+    &:hover {
+      background-color: var(--color-grey-3);
+    }
     &:last-child {
       & .btn--app-icon {
         background-color: var(--color-green-0);
