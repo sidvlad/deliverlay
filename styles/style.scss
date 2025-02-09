@@ -147,7 +147,7 @@ body {
   line-height: 18px;
   color: var(--color-grey-0);
   text-decoration: none;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   background-color: transparent;
   transition: var(--transition-hover);
@@ -157,27 +157,21 @@ body {
   &--primary {
     gap: 6px;
     padding: 14px 24px;
-    outline-width: 1px;
-    outline-color: var(--color-btn-primary);
-    outline-style: solid;
-    outline-offset: 0px;
+    border: 1px solid var(--color-btn-primary);
     border-radius: 30px;
     &:hover {
-      outline: 0;
+      border: 1px solid transparent;
       background: var(--color-gradient);
     }
   }
   &--secondary {
     gap: 6px;
     padding: 14px 24px;
-    outline-width: 1px;
-    outline-color: var(--color-white);
-    outline-style: solid;
-    outline-offset: 0px;
+    border: 1px solid var(--color-white);
     color: var(--color-grey-0);
     border-radius: 30px;
     &:hover {
-      outline-width: 0;
+      border: 1px solid transparent;
       background-color: var(--color-white);
       color: var(--color-grey-3);
       transition: var(--transition-hover);
@@ -234,7 +228,7 @@ body {
   &--big {
     gap: 10px;
     padding: 16px 36px;
-    outline-width: 2px;
+    border-width: 2px;
     & svg {
       width: 24px;
       height: 24px;
@@ -245,7 +239,10 @@ body {
     font-size: 17px;
     font-weight: 700;
     line-height: 20.4px;
-    outline-width: 2px;
+    border-width: 2px;
+    &:hover {
+      border: 2px solid transparent;
+    }
   }
   &--full {
     width: 100%;
@@ -255,28 +252,18 @@ body {
     height: 38px;
     border-radius: 8px;
     background-color: var(--color-grey-3);
-    outline: 1px solid var(--color-grey-3);
+    border: 1px solid var(--color-grey-3);
     transition: outline 0.3s ease;
     &:hover {
-      outline: 1px solid var(--color-btn-primary);
+      border: 1px solid var(--color-btn-primary);
     }
   }
   &--social-login {
     width: 100%;
     max-width: 207px;
   }
-  &--like {
-    height: 36px;
-    padding: 6px 12px 6px 8px;
-    gap: 10px;
-    background-color: var(--color-grey-3-transparent);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    color: var(--color-white);
-    border-radius: 8px;
-  }
   &--link {
+    max-width: 20%;
     position: relative;
     top: -2px;
     width: fit-content;
@@ -374,6 +361,7 @@ body {
   cursor: pointer;
   &__inner {
     display: flex;
+    align-items: center;
     gap: 8px;
     &--login {
       margin: 12px 0 15px 0;
@@ -653,8 +641,8 @@ body {
   }
   &__name {
     margin: 0;
-    padding-bottom: 2px;
     max-width: 96.5px;
+    padding-bottom: 2px;
     font-size: 16px;
     font-weight: 700;
     line-height: 19.2px;
@@ -662,6 +650,7 @@ body {
   }
   &__description {
     margin: 0;
+    max-width: 116px;
     font-size: 14px;
     font-weight: 700;
     line-height: 16.8px;
@@ -686,8 +675,10 @@ body {
   gap: 146px;
   padding-top: 85px;
   padding-bottom: 82px;
-  &__description {
+  &__logo {
     max-width: 242px;
+  }
+  &__description {
     margin: 7px 0 23px 0;
     font-size: 14px;
     line-height: 22px;
@@ -696,6 +687,7 @@ body {
 
 .footer-navigation {
   display: flex;
+  flex-wrap: wrap;
   gap: 144.75px;
   &__title {
     margin: 0 0 24px 0;
@@ -704,6 +696,7 @@ body {
     line-height: 26px;
   }
   &__list {
+    max-width: 107px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -758,7 +751,6 @@ body {
 
 .form-search {
   position: absolute;
-  top: 0;
   left: 0;
   width: 46px;
   height: 46px;
@@ -797,7 +789,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    left: 24px;
+    left: 23px;
     width: 18px;
     height: 18px;
     background-image: url("../../images/icons/search.svg");
@@ -846,8 +838,12 @@ body {
 .header-actions {
   position: relative;
   display: flex;
+  align-items: center;
   gap: 24px;
   padding-left: 70px;
+  & > .btn {
+    max-width: 223px;
+  }
 }
 
 .header-navigation {
@@ -905,6 +901,9 @@ body {
     text-align: right;
     white-space: nowrap;
     background-color: var(--color-grey-3);
+    &:first-child {
+      border-radius: 6px 0 0 0;
+    }
     &:last-child {
       border-bottom: 0;
       border-radius: 0 0 6px 6px;
@@ -1075,7 +1074,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 23px;
   }
   &__link {
     display: block;
@@ -1135,9 +1134,10 @@ body {
 
 .picks {
   padding-top: 62px;
-  padding-bottom: 61px;
+  padding-bottom: 59px;
   background-color: var(--color-grey-5);
   &__block {
+    max-width: 184px;
     flex-grow: 1;
   }
   &__control {
@@ -1158,11 +1158,13 @@ body {
   }
   &__info {
     width: 100%;
+    max-width: 297px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     column-gap: 10px;
+    overflow: hidden;
     border-bottom: 1px solid var(--color-grey-3);
   }
   &__image {
@@ -1175,6 +1177,7 @@ body {
     background-color: var(--color-grey-2);
   }
   &__item {
+    max-width: 337px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-grey-4);
@@ -1193,7 +1196,9 @@ body {
     }
   }
   &__likes {
+    max-width: 40%;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 10px;
     padding: 6px 12px 6px 8px;
@@ -1203,7 +1208,7 @@ body {
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
     gap: 20px;
   }
   &__list-promotions {
@@ -1213,6 +1218,9 @@ body {
     gap: 30px;
     margin-bottom: 32px;
     margin-left: -370px;
+    & .picks__item {
+      max-width: 340px;
+    }
     & .picks__image {
       width: 300px;
       min-width: 300px;
@@ -1220,6 +1228,7 @@ body {
   }
   &__logo {
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     width: 44px;
@@ -1289,7 +1298,9 @@ body {
     }
   }
   &__time {
+    max-width: 70%;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 10px;
     padding: 6px 12px 6px 8px;
@@ -1360,7 +1371,7 @@ body {
       background-color: var(--color-grey-3);
       cursor: pointer;
     }
-    &:hover .btn--like {
+    &:hover .places__like {
       background-color: var(--color-grey-4-transparent);
     }
   }
@@ -1378,6 +1389,20 @@ body {
     display: grid;
     grid-template-columns: 64px 1fr;
     column-gap: 10px;
+  }
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 6px 12px 6px 8px;
+    gap: 10px;
+    background-color: var(--color-grey-3-transparent);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--color-white);
+    border-radius: 8px;
   }
   &__list {
     display: flex;
@@ -1503,6 +1528,7 @@ body {
 
 .social {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin: 0;
   padding: 0;
@@ -1514,6 +1540,7 @@ body {
 .subscribe {
   &__label {
     display: block;
+    max-width: 296px;
     margin-bottom: 24px;
     font-size: 24px;
     font-weight: 700;
@@ -1704,4 +1731,10 @@ body {
 .title {
   text-transform: uppercase;
   word-break: break-word;
+}
+
+
+.header-navigation__link:has(.header-navigation__sublist:hover) {
+  background-color: var(--color-grey-3);
+  box-shadow: 0 4px 4px 0 rgba(28, 24, 24, .25);
 }
