@@ -258,6 +258,10 @@ body {
 .btn--social:hover {
   outline: 1px solid var(--color-btn-primary);
 }
+.btn--social-login {
+  width: 100%;
+  max-width: 207px;
+}
 .btn--like {
   height: 36px;
   padding: 6px 12px 6px 8px;
