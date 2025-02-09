@@ -15,880 +15,1228 @@
 </head>
   <body>
     <header class="header container">
-        <span>
-          <img src="images/icons/logo.svg" alt="Deliverlay logo" class="header__logo" width="201" height="46">
-        </span>
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item header-navigation__item--active">
-                <a href="index.html" class="header-navigation__link">Home</a>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Explore
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Login</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Catalog</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Item page</a>
-                    </li>
-                </ul>
-            </li>
+      <span class="header__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
+      </span>
+      <nav class="header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item header-navigation__item--active">
+            <a href="index.html" class="header-navigation__link">Home</a>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Explore
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="login.html" class="header-navigation__sublink" aria-current="page">Login</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="catalog.html" class="header-navigation__sublink" aria-current="page">Catalog</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="item.html" class="header-navigation__sublink" aria-current="page">Item page</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="contact.html" class="header-navigation__sublink" aria-current="page">Contact</a>
+              </li>
+            </ul>
+          </li>
 
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Activity
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Community
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Pages
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Contact
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-            <form class="form-search">
-                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search">
-                <label class="hidden" for="search"></label>
-            </form>
-          <a href="#" class="btn btn--primary">
-            <img src="images/icons/wallet.svg" alt="Icon Wallet" width="18" height="18">
-            Add payment Method
-          </a>
-        </div>
-      </header>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Activity
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Community
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Pages
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Contact
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form class="form-search">
+          <input
+            class="form-search__input"
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search"
+            aria-label="Search">
+          <label class="hidden" for="search"></label>
+        </form>
+        <a href="#" class="btn btn--primary">
+          <svg width="18" height="18" aria-label="Icon Wallet" role="img">
+            <use href="assets/images/icons/sprite.svg#icon-wallet"></use>
+          </svg>
+          Add payment Method
+        </a>
+      </div>
+    </header>
 
     <main class="main">
-        <section class="intro-main">
-            <div class="intro-main__wrapper container">
-                <div class="intro-main__block">
-                    <h1 class="intro-main__title">
-                        Flame-fast
-                         Delivery: Igniting
-                          your Convenience</h1>
-                    <h2 class="intro-main__subtitle">Best food Delivery in app Store and Google Play</h2>
-                    <div class="btn-wrapper btn-wrapper--gap">
-                        <a href="#" class="btn btn--primary btn--medium">
-                            <img src="images/icons/rocket.svg" alt="Icon Rocket for Download App" width="24" height="24">
-                            Download App
-                        </a>
-                        <a href="#" class="btn btn--secondary btn--medium">
-                            <img src="images/icons/note.svg" alt="Icon Note for Add Delivery" width="24" height="24">
-                            Add your Delivery
-                        </a>
-                    </div>
-                </div>
-                <div class="intro-main__block">
-                    <img src="images/content/deliveryboy.png" alt="3D-rendered delivery scooter with a rider wearing a helmet and carrying a package" width="580" height="580">
-                </div>
+      <section class="intro-main">
+        <div class="intro-main__wrapper container">
+          <div class="intro-main__block">
+              <h1 class="intro-main__title">
+                  Flame-fast
+                  Delivery: Igniting
+                  your Convenience
+                </h1>
+            <h2 class="intro-main__subtitle">Best food Delivery in app Store and Google Play</h2>
+            <div class="btn-wrapper btn-wrapper--gap">
+              <a href="#" class="btn btn--primary btn--medium">
+                <svg width="24" height="24" aria-label="Icon Rocket for Download App" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-rocket"></use>
+                </svg>
+                Download App
+              </a>
+              <a href="#" class="btn btn--secondary btn--medium">
+                <svg width="24" height="24" aria-label="Icon Note for Add Delivery" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-note"></use>
+                </svg>
+                Add your Delivery
+              </a>
             </div>
-            <div class="advantages container">
-                <div class="advantages__item">
-                    <div class="advantages__icon advantages__icon--blue">
-                        <img src="images/icons/wallet.svg" alt="Icon Wallet" width="22" height="20">
-                    </div>
-                    <h3 class="advantages__title">Pay In App</h3>
-                    <p class="advantages__description">Once you’ve set up your wallet of choice, connect it to OpenSeaby clicking the NFT Marketplacein the top right corner.</p>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon advantages__icon--green">
-                        <img src="images/icons/category.svg" alt="Icon Four Squares like categories in Catalog" width="22" height="22">
-                    </div>
-                    <h3 class="advantages__title">Choose Your Shop</h3>
-                    <p class="advantages__description">Click Create and set up your collection. Add social links, a description, profile & banner images, and set a secondary sales fee.</p>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon advantages__icon--purple">
-                        <img src="images/icons/landscape.svg" alt="Icon Landscape and Moon" width="19" height="19">
-                    </div>
-                    <h3 class="advantages__title">See Product Photos</h3>
-                    <p class="advantages__description">Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats</p>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__icon advantages__icon--orange">
-                        <img src="images/icons/bookmark.svg" alt="Icon Bookmark" width="19" height="22">
-                    </div>
-                    <h3 class="advantages__title">Add To Wish List</h3>
-                    <p class="advantages__description">Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs!</p>
-                </div>
+          </div>
+          <div class="intro-main__block">
+            <img
+              src="assets/images/content/deliveryboy.webp"
+              alt="3D-rendered delivery scooter with a rider wearing a helmet and carrying a package"
+              width="580"
+              height="580">
+          </div>
+        </div>
+        <div class="advantages container">
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon--blue">
+              <svg width="22" height="20" aria-label="Icon Wallet" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-wallet"></use>
+              </svg>
             </div>
-        </section>
-
-        <section class="promotions">
-            <div class="promotions__header container">
-                <h2 class="promotions__title">Hot Promotions</h2>
-                <a href="#" class="btn btn--link">Explore more</a>
-            </div>
-            <div class="picks__list picks__list-promotions">
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-1.jpg" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/salvador-dali.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-3.jpg" alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Living Vase 01 by Lanz...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-4.jpg" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/g.svg" alt="Gordons restaurant logo" width="23" height="23">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-5.jpg" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/la-la-pizza.svg" alt="La La Pizza restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-6.jpg" alt="Grilled chicken steak on a plate with green salad and cornbread on the side" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/c.svg" alt="Cafe restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-2.jpg" alt="Assorted pasta, salads, and side dishes in bowls with various sauces" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-                <div class="picks__item">
-                    <div class="picks__image">
-                        <img src="images/content/dish-3.jpg" alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery" width="300" height="290">
-                        <div class="picks__marks">
-                            <div class="picks__time">
-                                <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                05 : 12 : 07 : 45
-                            </div>
-                            <div class="picks__likes">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                351
-                            </div>
-                        </div>
-                    </div>
-                    <div class="picks__quote">"Living Vase 01 by Lanz...</div>
-                    <div class="picks__info">
-                        <div class="picks__logo">
-                            <img src="images/icons/b.svg" alt="B restaurant logo" width="28" height="25">
-                        </div>
-                        <div class="picks__block">
-                            <div class="picks__type">Restoran</div>
-                            <div class="picks__name">SalvadorDali</div>
-                        </div>
-                        <div class="picks__price">$2.70</div>
-                    </div>
-                    <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                </div>
-            </div>
-            <div class="promotions__controls">
-                <button class="btn">
-                    <img src="images/icons/left.svg" alt="Previous slide" width="16" height="16">
-                  </button>
-                  
-                  <div class="promotions__dots">
-                    <span class="promotions__dot promotions__dot--active"></span>
-                    <span class="promotions__dot"></span>
-                    <span class="promotions__dot"></span>
-                    <span class="promotions__dot"></span>
-                  </div>
-                  
-                  <button class="btn">
-                    <img src="images/icons/left.svg" alt="Next slide" width="16" height="16">
-                  </button>
-            </div>
-        </section>
-
-        <section class="places">
-            <div class="places__wrapper container">
-                <div class="places__header">
-                    <h2 class="places__title">Popular Places</h2>
-                    <a href="#" class="btn btn--link">Explore more</a>
-                </div>
-                <div class="places__list">
-                    <div class="places__item">
-                        <div class="places__collage">
-                            <img src="images/content/dish-2.jpg" class="places__img" alt="Assorted pasta, salads, and side dishes in bowls with various sauces" width="200" height="131">
-                            <img src="images/content/dish-1.jpg" class="places__img" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="200" height="131">
-                            <img src="images/content/dish-4.jpg" class="places__img places__img--square" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="130" height="130">
-                            <img src="images/content/dish-5.jpg" class="places__img places__img--square" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="130" height="130">
-                            <img src="images/content/dish-6.jpg" class="places__img places__img--square" alt="Grilled chicken steak on a plate with green salad and cornbread on the side" width="130" height="130">
-                        </div>
-                        <div class="places__footer">
-                            <div class="places__info">
-                                <div class="places__logo">
-                                    <img src="images/icons/salvador-dali.svg" alt="location" width="41" height="36">
-                                </div>
-                                <p class="places__name">SalvadorDali</p>
-                                <p class="places__time">Delivery time: <span>20-35min</span></p>
-                            </div>
-                            <button class="btn btn--like">
-                                <img src="images/icons/heart.svg" alt="arrow" width="20" height="20">
-                                <span class="like-count">351</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <div class="places__collage">
-                            <img src="images/content/dish-2.jpg" class="places__img" alt="Assorted pasta, salads, and side dishes in bowls with various sauces" width="200" height="131">
-                            <img src="images/content/dish-1.jpg" class="places__img" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="200" height="131">
-                            <img src="images/content/dish-4.jpg" class="places__img places__img--square" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="130" height="130">
-                            <img src="images/content/dish-5.jpg" class="places__img places__img--square" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="130" height="130">
-                            <img src="images/content/dish-6.jpg" class="places__img places__img--square" alt="Grilled chicken steak on a plate with green salad and cornbread on the side" width="130" height="130">
-                        </div>
-                        <div class="places__footer">
-                            <div class="places__info">
-                                <div class="places__logo">
-                                    <img src="images/icons/la-la-pizza.svg" alt="location" width="45" height="28">
-                                </div>
-                                <p class="places__name">La-La Pizza</p>
-                                <p class="places__time">Delivery time: <span>15-20min</span></p>
-                            </div>
-                            <button class="btn btn--like">
-                                <img src="images/icons/heart.svg" alt="arrow" width="20" height="20">
-                                <span class="like-count">351</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="places__item">
-                        <div class="places__collage">
-                            <img src="images/content/dish-2.jpg" class="places__img" alt="Assorted pasta, salads, and side dishes in bowls with various sauces" width="200" height="131">
-                            <img src="images/content/dish-1.jpg" class="places__img" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="200" height="131">
-                            <img src="images/content/dish-4.jpg" class="places__img places__img--square" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="130" height="130">
-                            <img src="images/content/dish-5.jpg" class="places__img places__img--square" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="130" height="130">
-                            <img src="images/content/dish-6.jpg" class="places__img places__img--square" alt="Grilled chicken steak on a plate with green salad and cornbread on the side" width="130" height="130">
-                        </div>
-                        <div class="places__footer">
-                            <div class="places__info">
-                                <div class="places__logo">
-                                    <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="41" height="46">
-                                </div>
-                                <p class="places__name">Gordons</p>
-                                <p class="places__time">Delivery time: <span>20-45min</span> </p>
-                            </div>
-                            <button class="btn btn--like">
-                                <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                <span class="like-count">351</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="employers container">
-            <div class="employers__header">
-                <h2 class="employers__title">Free Delivery</h2>
-            </div>
-            <div class="employers__list">
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-1.jpg" alt="Windsor Lane delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Windsor Lane</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-2.jpg" alt="Blake Banks delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Blake Banks</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-3.jpg" alt="Matt Ramos delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Matt Ramos</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-4.jpg" alt="Crispin Berry delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Crispin Berry</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-5.jpg" alt="Tommy Alvarez delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Tommy Alvarez</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-6.jpg" alt="Andy Hurlbutt delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Andy Hurlbutt</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-7.jpg" alt="Monica Lucas delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Monica Lucas</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-8.jpg" alt="Harper Wilcher delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Harper Wilcher</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-9.jpg" alt="Crispin Berry delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Crispin Berry</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-                <div class="employers__item">
-                    <div class="employers__image">
-                        <img src="images/content/employer-10.jpg" alt="Harper Wilcher delivery employer" width="100" height="100">
-                        <div class="employers__label">
-                            <img src="images/icons/check.svg" alt="Check icon" width="16" height="16">
-                        </div>
-                    </div>
-                    <div class="employers__info">
-                        <p class="employers__name">Windsor Lane</p>
-                        <p class="employers__description">Free Delivery</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="picks">
-            <div class="picks__wrapper container">
-                <div class="picks__header">
-                    <h2 class="picks__title">Today's Picks</h2>
-                    <a href="#" class="btn btn--link">Explore more</a>
-                </div>
-                <div class="picks__list">
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-1.jpg" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's..."</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/salvador-dali.svg" alt="SalvadorDali restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-3.jpg" alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Living Vase 01 by Lanz..."</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/b.svg" alt="B restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-4.jpg" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/g.svg" alt="Salvador Dali restaurant logo" width="23" height="23">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-5.jpg" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/la-la-pizza.svg" alt="La-La Pizza restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-6.jpg" alt="Grilled chicken steak on a plate with green salad and cornbread on the side" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/c.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-2.jpg" alt="Assorted pasta, salads, and side dishes in bowls with various sauces" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-3.jpg" alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Living Vase 01 by Lanz...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                    <div class="picks__item">
-                        <div class="picks__image">
-                            <img src="images/content/dish-1.jpg" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="297" height="290">
-                            <div class="picks__marks">
-                                <div class="picks__time">
-                                    <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                    05 : 12 : 07 : 45
-                                </div>
-                                <div class="picks__likes">
-                                    <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                    351
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                        <div class="picks__info">
-                            <div class="picks__logo">
-                                <img src="images/icons/salvador-dali.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                            </div>
-                            <div class="picks__block">
-                                <div class="picks__type">Restoran</div>
-                                <div class="picks__name">SalvadorDali</div>
-                            </div>
-                            <div class="picks__price">$2.70</div>
-                        </div>
-                        <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                    </div>
-                </div>
-                <div class="btn-wrapper btn-wrapper--center">
-                    <button class="btn btn--secondary btn--medium btn--strong">Load more</button>
-                </div>
-            </div>
-        </section>   
-    </main>
-
-
-    <footer class="footer container">
-        <div class="footer__logo">
-            <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
-            <p class="footer__description">Lorem ipsum dolor sit amet,consectetur
-                adipisicing elit. Quis non, fugit totam vel
-                laboriosam vitae.
+            <h3 class="advantages__title">Pay In App</h3>
+            <p class="advantages__description">
+              Once you’ve set up your wallet of choice, connect it to OpenSeaby clicking the NFT Marketplacein the top
+              right corner.
             </p>
-            <ul class="social">
-                <li><a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitch.svg" alt="twitch" width="24" height="24"></a>
-                </li>
-                <li><a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/google.svg" alt="google" width="24" height="24"></a>
-                </li>
-                <li><a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitter.svg" alt="twitter" width="24" height="24"></a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
-                    <img src="images/icons/facebook.svg" alt="facebook" width="24" height="24"></a>
-                </li>
-            </ul>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon--green">
+              <svg width="22" height="22" aria-label="Icon Four Squares like categories in Catalog" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-category"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__title">Choose Your Shop</h3>
+            <p class="advantages__description">
+              Click Create and set up your collection. Add social links, a description, profile & banner images, and set
+              a secondary sales fee.
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon--purple">
+              <svg width="19" height="19" aria-label="Icon Landscape and Moon" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-landscape"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__title">See Product Photos</h3>
+            <p class="advantages__description">
+              Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs
+              with properties, stats
+            </p>
+          </div>
+          <div class="advantages__item">
+            <div class="advantages__icon advantages__icon--orange">
+              <svg width="19" height="22" aria-label="Icon Bookmark" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-bookmark"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__title">Add To Wish List</h3>
+            <p class="advantages__description">
+              Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to
+              sell your NFTs!
+            </p>
+          </div>
         </div>
-        
-        <div class="footer-navigation">
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">My Account</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Authors</a></li>
-                    <li><a href="#" class="footer-navigation__link">Collection</a></li>
-                    <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
-                    <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Resources</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
-                    <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
-                    <li><a href="#" class="footer-navigation__link">Item Details</a></li>
-                    <li><a href="#" class="footer-navigation__link">Activity</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Company</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">About Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
-                    <li><a href="#" class="footer-navigation__link">Discover</a></li>
-                </ul>
-            </div>
+      </section>
+
+      <section class="promotions">
+        <div class="promotions__header container">
+          <h2 class="promotions__title">Hot Promotions</h2>
+          <a href="#" class="btn btn--link">Explore more</a>
         </div>
-        <form class="subscribe" action="/subscribe" method="post">
-            <label class="subscribe__label" for="subscribe">Subscribe Us</label>
-            <div class="subscribe__wrapper">
-                <input class="subscribe__input" type="email" id="subscribe" name="email" placeholder="Info@yourgmail.com" required>
-                <button class="subscribe__btn" type="submit">
-                    <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
+        <div class="picks__list picks__list-promotions">
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-1.webp"
+                alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/salvador-dali.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-3.webp"
+                alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Living Vase 01 by Lanz...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-4.webp"
+                alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/g.svg" alt="Gordons restaurant logo" width="23" height="23">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-5.webp"
+                alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/la-la-pizza.svg" alt="La La Pizza restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-6.webp"
+                alt="Grilled chicken steak on a plate with green salad and cornbread on the side"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/c.svg" alt="Cafe restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-2.webp"
+                alt="Assorted pasta, salads, and side dishes in bowls with various sauces"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+          <div class="picks__item">
+            <div class="picks__image">
+              <img
+                src="assets/images/content/dish-3.webp"
+                alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery"
+                width="300"
+                height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
+                </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
+            </div>
+            <div class="picks__quote">"Living Vase 01 by Lanz...</div>
+            <div class="picks__info">
+              <div class="picks__logo">
+                  <img src="images/icons/b.svg" alt="B restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restoran</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
+            </div>
+            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
+        </div>
+        <div class="promotions__controls">
+          <button class="btn">
+            <svg width="16" height="16" aria-label="Previous slide" role="img">
+              <use href="assets/images/icons/sprite.svg#icon-left"></use>
+            </svg>
+          </button>
+
+          <div class="promotions__dots">
+            <span class="promotions__dot promotions__dot--active"></span>
+            <span class="promotions__dot"></span>
+            <span class="promotions__dot"></span>
+            <span class="promotions__dot"></span>
+          </div>
+
+          <button class="btn">
+            <svg width="16" height="16" aria-label="Next slide" role="img">
+              <use href="assets/images/icons/sprite.svg#icon-left"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="places">
+        <div class="places__wrapper container">
+          <div class="places__header">
+            <h2 class="places__title">Popular Places</h2>
+            <a href="#" class="btn btn--link">Explore more</a>
+          </div>
+          <div class="places__list">
+            <div class="places__item">
+              <div class="places__collage">
+                <img
+                  src="assets/images/content/dish-2.webp"
+                  class="places__img"
+                  alt="Assorted pasta, salads, and side dishes in bowls with various sauces"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  class="places__img"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-4.webp"
+                  class="places__img places__img--square"
+                  alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-5.webp"
+                  class="places__img places__img--square"
+                  alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-6.webp"
+                  class="places__img places__img--square"
+                  alt="Grilled chicken steak on a plate with green salad and cornbread on the side"
+                  width="130"
+                  height="130">
+              </div>
+              <div class="places__footer">
+                <div class="places__info">
+                  <div class="places__logo">
+                      <img src="images/icons/salvador-dali.svg" alt="location" width="41" height="36">
+                  </div>
+                  <p class="places__name">SalvadorDali</p>
+                  <p class="places__time">Delivery time: <span>20-35min</span></p>
+                </div>
+                <button class="btn btn--like">
+                  <svg width="20" height="20" aria-label="arrow" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="like-count">351</span>
                 </button>
+              </div>
             </div>
-        </form>
+            <div class="places__item">
+              <div class="places__collage">
+                <img
+                  src="assets/images/content/dish-2.webp"
+                  class="places__img"
+                  alt="Assorted pasta, salads, and side dishes in bowls with various sauces"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  class="places__img"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-4.webp"
+                  class="places__img places__img--square"
+                  alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-5.webp"
+                  class="places__img places__img--square"
+                  alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-6.webp"
+                  class="places__img places__img--square"
+                  alt="Grilled chicken steak on a plate with green salad and cornbread on the side"
+                  width="130"
+                  height="130">
+              </div>
+              <div class="places__footer">
+                <div class="places__info">
+                  <div class="places__logo">
+                      <img src="images/icons/la-la-pizza.svg" alt="location" width="45" height="28">
+                  </div>
+                  <p class="places__name">La-La Pizza</p>
+                  <p class="places__time">Delivery time: <span>15-20min</span></p>
+                </div>
+                <button class="btn btn--like">
+                  <svg width="20" height="20" aria-label="arrow" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="like-count">351</span>
+                </button>
+              </div>
+            </div>
+            <div class="places__item">
+              <div class="places__collage">
+                <img
+                  src="assets/images/content/dish-2.webp"
+                  class="places__img"
+                  alt="Assorted pasta, salads, and side dishes in bowls with various sauces"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  class="places__img"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="200"
+                  height="131">
+                <img
+                  src="assets/images/content/dish-4.webp"
+                  class="places__img places__img--square"
+                  alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-5.webp"
+                  class="places__img places__img--square"
+                  alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                  width="130"
+                  height="130">
+                <img
+                  src="assets/images/content/dish-6.webp"
+                  class="places__img places__img--square"
+                  alt="Grilled chicken steak on a plate with green salad and cornbread on the side"
+                  width="130"
+                  height="130">
+              </div>
+              <div class="places__footer">
+                <div class="places__info">
+                  <div class="places__logo">
+                      <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="41" height="46">
+                  </div>
+                  <p class="places__name">Gordons</p>
+                  <p class="places__time">Delivery time: <span>20-45min</span></p>
+                </div>
+                <button class="btn btn--like">
+                  <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  <span class="like-count">351</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="employers container">
+        <div class="employers__header">
+          <h2 class="employers__title">Free Delivery</h2>
+        </div>
+        <div class="employers__list">
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-1.webp"
+                alt="Windsor Lane delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Windsor Lane</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-2.webp"
+                alt="Blake Banks delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Blake Banks</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-3.webp"
+                alt="Matt Ramos delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Matt Ramos</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-4.webp"
+                alt="Crispin Berry delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Crispin Berry</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-5.webp"
+                alt="Tommy Alvarez delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Tommy Alvarez</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-6.webp"
+                alt="Andy Hurlbutt delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Andy Hurlbutt</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-7.webp"
+                alt="Monica Lucas delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Monica Lucas</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-8.webp"
+                alt="Harper Wilcher delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Harper Wilcher</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-9.webp"
+                alt="Crispin Berry delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Crispin Berry</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+          <div class="employers__item">
+            <div class="employers__image">
+              <img
+                src="assets/images/content/employer-1.webp"
+                alt="Harper Wilcher delivery employer"
+                width="100"
+                height="100">
+              <div class="employers__label">
+                <svg width="16" height="16" aria-label="Check icon" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-check"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="employers__info">
+              <p class="employers__name">Windsor Lane</p>
+              <p class="employers__description">Free Delivery</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="picks">
+        <div class="picks__wrapper container">
+          <div class="picks__header">
+            <h2 class="picks__title">Today's Picks</h2>
+            <a href="#" class="btn btn--link">Explore more</a>
+          </div>
+          <div class="picks__list">
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's..."</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="SalvadorDali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-3.webp"
+                  alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Living Vase 01 by Lanz..."</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="B restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-b"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-4.webp"
+                  alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="23" height="23" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-g"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-5.webp"
+                  alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="La-La Pizza restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-la-la-pizza"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-6.webp"
+                  alt="Grilled chicken steak on a plate with green salad and cornbread on the side"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-c"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-2.webp"
+                  alt="Assorted pasta, salads, and side dishes in bowls with various sauces"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                    <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="28" height="25">
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-3.webp"
+                  alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Living Vase 01 by Lanz...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-b"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+          </div>
+          <div class="btn-wrapper btn-wrapper--center">
+            <button class="btn btn--secondary btn--medium btn--strong">Load more</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
+        <p class="footer__description">
+          Lorem ipsum dolor sit amet,consectetur
+           adipisicing elit. Quis non, fugit totam vel
+            laboriosam vitae.
+        </p>
+        <ul class="social">
+          <li>
+            <a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitch" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitch"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="google" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-google"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitter" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
+              <svg width="24" height="24" aria-label="facebook" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-navigation">
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">My Account</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Authors</a></li>
+            <li><a href="#" class="footer-navigation__link">Collection</a></li>
+            <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
+            <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Resources</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
+            <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
+            <li><a href="#" class="footer-navigation__link">Item Details</a></li>
+            <li><a href="#" class="footer-navigation__link">Activity</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Company</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">About Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
+            <li><a href="#" class="footer-navigation__link">Discover</a></li>
+          </ul>
+        </div>
+      </div>
+      <form class="subscribe" action="/subscribe" method="post">
+        <label class="subscribe__label" for="subscribe">Subscribe Us</label>
+        <div class="subscribe__wrapper">
+          <input
+            class="subscribe__input"
+            type="email"
+            id="subscribe"
+            name="email"
+            placeholder="Info@yourgmail.com"
+            required>
+          <button class="subscribe__btn" type="submit">
+              <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
+          </button>
+        </div>
+      </form>
     </footer>
-
-
   </body>
 </html>

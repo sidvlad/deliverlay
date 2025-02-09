@@ -15,561 +15,665 @@
 </head>
   <body>
     <header class="header container">
-        <a href="index.html">
-          <img src="images/icons/logo.svg" alt="Deliverlay logo header" class="header__logo" width="201" height="46">
+      <a href="index.html" class="header__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
+      </a>
+      <nav class="header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item header-navigation__item--active">
+            <a href="index.html" class="header-navigation__link">Home</a>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Explore
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Login</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Catalog</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Item page</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Activity
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Community
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Pages
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Contact
+              <svg width="10" height="10" aria-label="Icon Arrow Down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form class="form-search">
+          <input
+            class="form-search__input"
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search"
+            aria-label="Search">
+          <label class="hidden" for="search"></label>
+        </form>
+        <a href="#" class="btn btn--primary">
+          <svg width="18" height="18" aria-label="Icon Wallet" role="img">
+            <use href="assets/images/icons/sprite.svg#icon-wallet"></use>
+          </svg>
+          Add payment Method
         </a>
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item header-navigation__item--active">
-                <a href="index.html" class="header-navigation__link">Home</a>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Explore
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
+      </div>
+    </header>
+    <section class="intro">
+      <div class="intro__wrapper container">
+        <h1 class="intro__title">Catalog</h1>
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Home</a></li>
+          <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Explore</a></li>
+          <li class="breadcrumb__item">Item Details 1</li>
+        </ul>
+      </div>
+    </section>
+    <main class="catalog">
+      <div class="catalog__wrapper container">
+        <aside class="choise">
+          <details class="choise__item" open>
+            <summary class="choise__header">Food types</summary>
+            <div class="choise__wrapper">
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
                 </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Login</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Catalog</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Item page</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Activity
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood1" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
                 </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Community
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
                 </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Pages
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious1" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
                 </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Contact
-                    <img src="images/icons/down.svg" alt="Icon Arrow Down" width="10" height="10">
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="deserts" name="deserts" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Deserts</span>
                 </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-            <form class="form-search">
-                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search">
-                <label class="hidden" for="search"></label>
-            </form>
-          <a href="#" class="btn btn--primary">
-            <img src="images/icons/wallet.svg" alt="Icon Wallet" width="18" height="18">
-            Add payment Method
-          </a>
-        </div>
-      </header>
-        <section class="intro">
-            <div class="intro__wrapper container">
-                <h1 class="intro__title">Catalog</h1>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Home</a></li>
-                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Explore</a></li>
-                    <li class="breadcrumb__item">Item Details 1</li>
-                </ul>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="deserts1" name="deserts" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Deserts</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="drinks" name="drinks" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Drinks</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="drinks1" name="drinks" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Drinks</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  class="hidden checkbox__input"
+                  id="main-dishes"
+                  name="main-dishes"
+                  required
+                  checked>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Main Dishes</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="main-dishes1" name="main-dishes" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Main Dishes</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="salats" name="salats" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Salats</span>
+                </span>
+              </label>
             </div>
+          </details>
+          <details class="choise__item" open>
+            <summary class="choise__header">Place types</summary>
+            <div class="choise__wrapper">
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood2" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood3" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious2" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious3" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="deserts2" name="deserts" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Deserts</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="main-dishes2" name="main-dishes" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Deserts</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="drinks2" name="drinks" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Drinks</span>
+                </span>
+              </label>
+            </div>
+          </details>
+          <details class="choise__item" open>
+            <summary class="choise__header">Delivery Price</summary>
+            <div class="choise__wrapper">
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood4" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious4" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="deserts4" name="deserts" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Deserts</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="drinks4" name="drinks" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Drinks</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="main-dishes4" name="main-dishes" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Main Dishes</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="salats4" name="salats" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Salats</span>
+                </span>
+              </label>
+            </div>
+          </details>
+          <details class="choise__item" open>
+            <summary class="choise__header">Rating</summary>
+            <div class="choise__wrapper">
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="fastfood5" name="fastfood" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Fast food</span>
+                </span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" class="hidden checkbox__input" id="delicious5" name="delicious" required>
+                <span class="checkbox__inner">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__text">Delicious</span>
+                </span>
+              </label>
+            </div>
+          </details>
+        </aside>
+
+        <section class="picks picks--catalog">
+          <div class="picks__list">
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-1.webp"
+                  alt="Fried chicken, burger, fries, and dipping sauces on a wooden table"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-3.webp"
+                  alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Living Vase 01 by Lanz...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Salvador Dali restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-b"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <button class="btn btn--secondary btn--full">$12.70</button>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-4.webp"
+                  alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="23" height="23" aria-label="Gordons restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-g"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-5.webp"
+                  alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="La La Pizza restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-la-la-pizza"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-6.webp"
+                  alt="Plate of pasta with a creamy sauce and vegetables"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Cafe restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-c"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+            <div class="picks__item">
+              <div class="picks__image">
+                <img
+                  src="assets/images/content/dish-2.webp"
+                  alt="Plate of pasta with a creamy sauce and vegetables"
+                  width="297"
+                  height="290">
+                <div class="picks__marks">
+                  <div class="picks__time">
+                    <svg width="20" height="20" aria-label="Icon Flame for timer delivery" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                    </svg>
+                    05 : 12 : 07 : 45
+                  </div>
+                  <div class="picks__likes">
+                    <svg width="20" height="20" aria-label="Icon Heart for likes" role="img">
+                      <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                    </svg>
+                    351
+                  </div>
+                </div>
+              </div>
+              <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
+              <div class="picks__info">
+                <div class="picks__logo">
+                  <svg width="28" height="25" aria-label="Gordons restaurant logo" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-gordons"></use>
+                  </svg>
+                </div>
+                <div class="picks__block">
+                  <div class="picks__type">Restoran</div>
+                  <div class="picks__name">SalvadorDali</div>
+                </div>
+                <div class="picks__price">$2.70</div>
+              </div>
+              <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+            </div>
+          </div>
+          <div class="btn-wrapper btn-wrapper--center">
+            <button class="btn btn--secondary btn--medium">Load more</button>
+          </div>
         </section>
-        <main class="catalog">
-            <div class="catalog__wrapper container">
-                <aside class="choise">
-                    <details class="choise__item" open>
-                        <summary class="choise__header">Food types</summary>
-                        <div class="choise__wrapper">
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood1" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious1" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="deserts" name="deserts" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Deserts</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="deserts1" name="deserts" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Deserts</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="drinks" name="drinks" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Drinks</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="drinks1" name="drinks" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Drinks</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="main-dishes" name="main-dishes" required checked>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Main Dishes</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="main-dishes1" name="main-dishes" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Main Dishes</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="salats" name="salats" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Salats</span>
-                                </span>
-                            </label>
-                        </div>
-                    </details>
-                    <details class="choise__item" open>
-                        <summary class="choise__header">Place types</summary>
-                        <div class="choise__wrapper">
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood2" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood3" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious2" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious3" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="deserts2" name="deserts" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Deserts</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="main-dishes2" name="main-dishes" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Deserts</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="drinks2" name="drinks" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Drinks</span>
-                                </span>
-                            </label>
-                        </div>
-                    </details>
-                    <details class="choise__item" open>
-                        <summary class="choise__header">Delivery Price</summary>
-                        <div class="choise__wrapper">
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood4" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious4" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="deserts4" name="deserts" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Deserts</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="drinks4" name="drinks" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Drinks</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="main-dishes4" name="main-dishes" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Main Dishes</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="salats4" name="salats" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Salats</span>
-                                </span>
-                            </label>
-                        </div>
-                    </details>
-                    <details class="choise__item" open>
-                        <summary class="choise__header">Rating</summary>
-                        <div class="choise__wrapper">
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="fastfood5" name="fastfood" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Fast food</span>
-                                </span>
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" class="hidden checkbox__input" id="delicious5" name="delicious" required>
-                                <span class="checkbox__inner">
-                                    <span class="checkbox__box"></span>
-                                    <span class="checkbox__text">Delicious</span>
-                                </span>
-                            </label>
-                        </div>
-                    </details>
-                </aside>
-
-                <section class="picks picks--catalog">
-                    <div class="picks__list">
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-1.jpg" alt="Fried chicken, burger, fries, and dipping sauces on a wooden table" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/salvador-dali.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                        </div>
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-3.jpg" alt="Plate of mashed potatoes with meat and creamy sauce, hand holding cutlery" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Living Vase 01 by Lanz...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <button class="btn btn--secondary btn--full">$12.70</button>
-                        </div>
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-4.jpg" alt="Juicy burgers with lettuce, tomato, and sesame buns in takeaway boxes" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/g.svg" alt="Gordons restaurant logo" width="23" height="23">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                        </div>
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-5.jpg" alt="Barbecue ribs, baked potatoes, and grilled meat with side dishes" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/la-la-pizza.svg" alt="La La Pizza restaurant logo" width="28" height="25">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                        </div>
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-6.jpg" alt="Plate of pasta with a creamy sauce and vegetables" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/c.svg" alt="Cafe restaurant logo" width="28" height="25">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                        </div>
-                        <div class="picks__item">
-                            <div class="picks__image">
-                                <img src="images/content/dish-2.jpg" alt="Plate of pasta with a creamy sauce and vegetables" width="297" height="290">
-                                <div class="picks__marks">
-                                    <div class="picks__time">
-                                        <img src="images/icons/fire.svg" alt="Icon Flame for timer delivery" width="20" height="20">
-                                        05 : 12 : 07 : 45
-                                    </div>
-                                    <div class="picks__likes">
-                                        <img src="images/icons/heart.svg" alt="Icon Heart for likes" width="20" height="20">
-                                        351
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
-                            <div class="picks__info">
-                                <div class="picks__logo">
-                                    <img src="images/icons/gordons.svg" alt="Gordons restaurant logo" width="28" height="25">
-                                </div>
-                                <div class="picks__block">
-                                    <div class="picks__type">Restoran</div>
-                                    <div class="picks__name">SalvadorDali</div>
-                                </div>
-                                <div class="picks__price">$2.70</div>
-                            </div>
-                            <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-                        </div>
-                    </div>
-                    <div class="btn-wrapper btn-wrapper--center">
-                        <button class="btn btn--secondary btn--medium">Load more</button>
-                    </div>
-                </section>   
-            </div>
-        </main>
-
+      </div>
+    </main>
 
     <footer class="footer container">
-        <div class="footer__logo">
-            <a href="index.html">
-                <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
-            </a>
-            <p class="footer__description">Lorem ipsum dolor sit amet,consectetur
-                adipisicing elit. Quis non, fugit totam vel
-                laboriosam vitae.
-            </p>
-            <ul class="social">
-                <li><a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitch.svg" alt="twitch" width="24" height="24"></a>
-                </li>
-                <li><a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/google.svg" alt="google" width="24" height="24"></a>
-                </li>
-                <li><a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitter.svg" alt="twitter" width="24" height="24"></a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
-                    <img src="images/icons/facebook.svg" alt="facebook" width="24" height="24"></a>
-                </li>
-            </ul>
+      <div class="footer__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
+        <p class="footer__description">
+          Lorem ipsum dolor sit amet,consectetur
+           adipisicing elit. Quis non, fugit totam vel
+            laboriosam vitae.
+        </p>
+        <ul class="social">
+          <li>
+            <a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitch" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitch"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="google" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-google"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitter" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
+              <svg width="24" height="24" aria-label="facebook" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-navigation">
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">My Account</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Authors</a></li>
+            <li><a href="#" class="footer-navigation__link">Collection</a></li>
+            <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
+            <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
+          </ul>
         </div>
-        
-        <div class="footer-navigation">
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">My Account</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Authors</a></li>
-                    <li><a href="#" class="footer-navigation__link">Collection</a></li>
-                    <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
-                    <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Resources</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
-                    <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
-                    <li><a href="#" class="footer-navigation__link">Item Details</a></li>
-                    <li><a href="#" class="footer-navigation__link">Activity</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Company</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">About Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
-                    <li><a href="#" class="footer-navigation__link">Discover</a></li>
-                </ul>
-            </div>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Resources</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
+            <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
+            <li><a href="#" class="footer-navigation__link">Item Details</a></li>
+            <li><a href="#" class="footer-navigation__link">Activity</a></li>
+          </ul>
         </div>
-        <form class="subscribe" action="/subscribe" method="post">
-            <label class="subscribe__label" for="subscribe">Subscribe Us</label>
-            <div class="subscribe__wrapper">
-                <input class="subscribe__input" type="email" id="subscribe" name="email" placeholder="Info@yourgmail.com" required>
-                <button class="subscribe__btn" type="submit">
-                    <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
-                </button>
-            </div>
-        </form>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Company</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">About Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
+            <li><a href="#" class="footer-navigation__link">Discover</a></li>
+          </ul>
+        </div>
+      </div>
+      <form class="subscribe" action="/subscribe" method="post">
+        <label class="subscribe__label" for="subscribe">Subscribe Us</label>
+        <div class="subscribe__wrapper">
+          <input
+            class="subscribe__input"
+            type="email"
+            id="subscribe"
+            name="email"
+            placeholder="Info@yourgmail.com"
+            required>
+          <button class="subscribe__btn" type="submit">
+              <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
+          </button>
+        </div>
+      </form>
     </footer>
   </body>
 </html>

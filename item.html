@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.25, user-scalable=no">
     <meta name="description" content="Pixmart offers premium digital assets for creative projects. Explore UI/UX kits, illustrations, templates, fonts, and more to elevate your designs effortlessly.">
     <meta name="keywords" content="digital assets, UI/UX kits, illustrations, templates, fonts, creative projects">
-    <title>Deliverlay</title>
+    <title>Deliverlay - Item</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,636 +15,739 @@
 </head>
   <body>
     <header class="header container">
-        <a href="index.html">
-          <img src="images/icons/logo.svg" alt="Deliverlay logo header" class="header__logo" width="201" height="46">
+      <a href="index.html" class="header__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo header" width="201" height="46">
+      </a>
+      <nav class="header-navigation">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item header-navigation__item--active">
+            <a href="index.html" class="header-navigation__link">Home</a>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Explore
+              <svg width="10" height="10" aria-label="down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="login.html" class="header-navigation__sublink" aria-current="page">Login</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="catalog.html" class="header-navigation__sublink" aria-current="page">Catalog</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="contact.html" class="header-navigation__sublink" aria-current="page">Contact</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="index.html" class="header-navigation__sublink" aria-current="page">Main</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Activity
+              <svg width="10" height="10" aria-label="down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Community
+              <svg width="10" height="10" aria-label="down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Pages
+              <svg width="10" height="10" aria-label="down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-navigation__item">
+            <span class="header-navigation__link"
+              >Contact
+              <svg width="10" height="10" aria-label="down" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-down"></use>
+              </svg>
+            </span>
+            <ul class="header-navigation__sublist">
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
+              </li>
+              <li class="header-navigation__subitem">
+                <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <form class="form-search form-search--active">
+          <input
+            class="form-search__input"
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search"
+            aria-label="Search">
+          <label class="hidden" for="search"></label>
+        </form>
+        <a href="#" class="btn btn--primary">
+          <svg width="18" height="18" aria-label="wallet" role="img">
+            <use href="assets/images/icons/sprite.svg#icon-wallet"></use>
+          </svg>
+          Add payment Method
         </a>
-        <nav class="header-navigation">
-          <ul class="header-navigation__list">
-            <li class="header-navigation__item header-navigation__item--active">
-                <a href="index.html" class="header-navigation__link">Home</a>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Explore
-                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Login</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Catalog</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Item page</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Activity
-                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Community
-                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Pages
-                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="header-navigation__item">
-                <span class="header-navigation__link">Contact
-                    <img src="images/icons/down.svg" alt="down" width="10" height="10">
-                </span>
-                <ul class="header-navigation__sublist">
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 1</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 2</a>
-                    </li>
-                    <li class="header-navigation__subitem">
-                        <a href="#" class="header-navigation__sublink" aria-current="page">Subpage 3</a>
-                    </li>
-                </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-actions">
-            <form class="form-search form-search--active">
-                <input class="form-search__input" type="search" id="search" name="search" placeholder="Search" aria-label="Search">
-                <label class="hidden" for="search"></label>
-            </form>
-          <a href="#" class="btn btn--primary">
-            <img src="images/icons/wallet.svg" alt="wallet" width="18" height="18">
-            Add payment Method
-          </a>
-        </div>
-      </header>
-        <section class="intro">
-            <div class="intro__wrapper container">
-                <h1 class="intro__title">Item Details 1</h1>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Home</a></li>
-                    <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Explore</a></li>
-                    <li class="breadcrumb__item">Item Details 1</li>
-                </ul>
-            </div>
-        </section>
-<main class="item">
-    <section class="details container">
-        <div class="details__block">
-            <img src="images/content/food.jpg" class="details__image" alt="dish" width="690" height="690">
-        </div>
-        <div class="details__block">
-            <h2 class="details__title">Roger’s Hamburger</h2>
-            <div class="details__stats">
-                <div class="btn-wrapper btn-wrapper--gap-small">
-                    <span class="details__stat">
-                        <img src="images/icons/eye-grey.svg" alt="views" width="16" height="16">
-                        1225</span>
-                    <span class="details__stat">
-                        <img src="images/icons/heart-grey.svg" alt="heart" width="16" height="16">
-                        14516</span>
-                </div>
-                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-small">
-                    <button class="btn btn--circle">
-                        <img src="images/icons/send-grey.svg" alt="send" width="16" height="16">
-                    </button>
-                    <button class="btn btn--circle">
-                        <img src="images/icons/dots.svg" alt="dots" width="16" height="16">
-                    </button>
-                </div>
-            </div>
-            <div class="btn-wrapper">
-                <a href="#" target="_blank" class="btn btn--app">
-                    <span class="btn--app-icon">
-                        <img src="images/icons/apple.svg" alt="app store" width="19" height="25">
-                    </span>
-                    <span class="btn--app-text">Download app</span>
-                    <span class="btn--app-description">for IOS</span>
-                </a>
-                <a href="#" target="_blank" class="btn btn--app btn--app-green">
-                    <span class="btn--app-icon">
-                        <img src="images/icons/android.svg" alt="app store" width="20" height="25">
-                    </span>
-                    <span class="btn--app-text">Download app</span>
-                    <span class="btn--app-description">for Android</span>
-                </a>
-            </div>
-            <p class="details__description">
-                Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget. 
-                Facilisi lobortisal morbi fringilla urna amet sed ipsum vitae ipsum malesuada. 
-                Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget. 
-                Facilisi lobortisal morbi fringilla urna amet sed ipsum
-            </p>
-            <div class="btn-wrapper">
-                <div class="details__timer">
-                    <span>Offer time:</span>
-                    <span class="details__time">04 : 23 : 10 : 39</span>
-                </div>
-                <div class="details__timer">
-                    <span>Delivery time:</span>
-                    <span class="details__time">20-45min.</span>
-                </div>
-            </div>
-            <button class="btn btn--primary btn--strong btn--full">
-                <img src="images/icons/wallet.svg" alt="Wallet" width="24" height="24">
-                $12.70 
-            </button>
-            <div class="tabs">
-                <ul class="tabs__list">
-                    <li class="tabs__item"><a href="#product" class="tabs__link">Product information</a></li>
-                    <li class="tabs__item"><a href="#information" class="tabs__link">Store information</a></li>
-                    <li class="tabs__item tabs__item--active"><a href="#stores" class="tabs__link">In other stores</a></li>
-                </ul>
-                <div class="tabs__content" id="product">
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/la-la-pizza.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Limbo Burgers</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/c.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Barbara Sun</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/salvador-dali.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Salvador Dali</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="tabs__content" id="information">
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/la-la-pizza.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Limbo Burgers</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/c.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Barbara Sun</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/salvador-dali.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Salvador Dali</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="tabs__content tabs__content--active" id="stories">
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/la-la-pizza.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Limbo Burgers</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/c.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Barbara Sun</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                    <a href="#" class="tabs__wrapper">
-                        <div class="tabs__logo">
-                            <img src="images/icons/salvador-dali.svg" alt="location" width="28" height="25">
-                        </div>
-                        <div class="tabs__block">
-                            <div class="tabs__type">Restorant</div>
-                            <div class="tabs__name">Salvador Dali</div>
-                        </div>
-                        <div class="btn-wrapper btn-wrapper--end">
-                            <div class="tabs__delivery">20-35min</div>
-                            <div class="tabs__price">$2.70</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="intro__wrapper container">
+        <h1 class="intro__title">Item Details 1</h1>
+        <ul class="breadcrumb">
+          <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Home</a></li>
+          <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Explore</a></li>
+          <li class="breadcrumb__item">Item Details 1</li>
+        </ul>
+      </div>
     </section>
+    <main class="item">
+      <section class="details container">
+        <div class="details__block">
+          <img src="assets/images/content/food.webp" class="details__image" alt="dish" width="690" height="690">
+        </div>
+        <div class="details__block">
+          <h2 class="details__title">Roger’s Hamburger</h2>
+          <div class="details__stats">
+            <div class="btn-wrapper btn-wrapper--gap-small">
+              <span class="details__stat">
+                <svg width="16" height="16" aria-label="views" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-eye-grey"></use>
+                </svg>
+                1225</span
+              >
+              <span class="details__stat">
+                <svg width="16" height="16" aria-label="heart" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-heart-grey"></use>
+                </svg>
+                14516</span
+              >
+            </div>
+            <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-small">
+              <button class="btn btn--circle">
+                <svg width="16" height="16" aria-label="send" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-send-grey"></use>
+                </svg>
+              </button>
+              <button class="btn btn--circle">
+                <svg width="16" height="16" aria-label="dots" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-dots"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <a href="#" target="_blank" class="btn btn--app">
+              <span class="btn--app-icon">
+                <svg width="19" height="25" aria-label="app store" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-apple"></use>
+                </svg>
+              </span>
+              <span class="btn--app-text">Download app</span>
+              <span class="btn--app-description">for IOS</span>
+            </a>
+            <a href="#" target="_blank" class="btn btn--app btn--app-green">
+              <span class="btn--app-icon">
+                <svg width="20" height="25" aria-label="app store" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-android"></use>
+                </svg>
+              </span>
+              <span class="btn--app-text">Download app</span>
+              <span class="btn--app-description">for Android</span>
+            </a>
+          </div>
+          <p class="details__description">
+            Habitant sollicitudin faucibus cursus lectus pulvinar dolor non ultrices eget. Facilisi lobortisal morbi
+            fringilla urna amet sed ipsum vitae ipsum malesuada. Habitant sollicitudin faucibus cursus lectus pulvinar
+            dolor non ultrices eget. Facilisi lobortisal morbi fringilla urna amet sed ipsum
+          </p>
+          <div class="btn-wrapper">
+            <div class="details__timer">
+              <span>Offer time:</span>
+              <span class="details__time">04 : 23 : 10 : 39</span>
+            </div>
+            <div class="details__timer">
+              <span>Delivery time:</span>
+              <span class="details__time">20-45min.</span>
+            </div>
+          </div>
+          <button class="btn btn--primary btn--strong btn--full">
+            <svg width="24" height="24" aria-label="Wallet" role="img">
+              <use href="assets/images/icons/sprite.svg#icon-wallet"></use>
+            </svg>
+            $12.70
+          </button>
+          <div class="tabs">
+            <ul class="tabs__list">
+              <li class="tabs__item"><a href="#product" class="tabs__link">Product information</a></li>
+              <li class="tabs__item"><a href="#information" class="tabs__link">Store information</a></li>
+              <li class="tabs__item tabs__item--active"><a href="#stores" class="tabs__link">In other stores</a></li>
+            </ul>
+            <div class="tabs__content" id="product">
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-la-la-pizza"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Limbo Burgers</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-c"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Barbara Sun</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">SalvadorDali</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+            </div>
+            <div class="tabs__content" id="information">
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-la-la-pizza"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Limbo Burgers</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-c"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Barbara Sun</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">SalvadorDali</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+            </div>
+            <div class="tabs__content tabs__content--active" id="stories">
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-la-la-pizza"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Limbo Burgers</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-c"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">Barbara Sun</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+              <a href="#" class="tabs__wrapper">
+                <div class="tabs__logo">
+                  <svg width="28" height="25" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                  </svg>
+                </div>
+                <div class="tabs__block">
+                  <div class="tabs__type">Restorant</div>
+                  <div class="tabs__name">SalvadorDali</div>
+                </div>
+                <div class="btn-wrapper btn-wrapper--end btn-wrapper--gap-micro">
+                  <div class="tabs__delivery">20-35min</div>
+                  <div class="tabs__price">$12.70</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="picks container">
+      <section class="picks picks--item container">
         <div class="picks__control">
-            <div class="btn-wrapper">
-                <button class="btn btn--filter btn--filter-active">All</button>
-                <button class="btn btn--filter">Fast food</button>
-                <button class="btn btn--filter">Delicious</button>
-                <button class="btn btn--filter">Deserts</button>
-                <button class="btn btn--filter">Drinks</button>
-                <button class="btn btn--filter">Main Dishes</button>
-                <button class="btn btn--filter">Salats</button>
-            </div>
-            <div class="btn-wrapper btn-wrapper--end">
-                <form class="picks__form">
-                    <select class="picks__select" name="type" id="type">
-                        <option value="types">Food types</option>
-                        <option value="burgers">Burgers</option>
-                        <option value="pizza">Pizza</option>
-                        <option value="pasta">Pasta</option>
-                        <option value="baking">Baking</option>
-                        <option value="cooking">Cooking</option>
-                    </select>
-                    <select class="picks__select" name="sort" id="sort">
-                        <option value="sort">Sort by</option>
-                        <option value="new">New</option>
-                        <option value="popular">Popular</option>
-                        <option value="price">Price</option>
-                        <option value="rating">Rating</option>
-                    </select>
-                </form>
-            </div>
+          <div class="btn-wrapper">
+            <button class="btn btn--filter btn--filter-active">All</button>
+            <button class="btn btn--filter">Fast food</button>
+            <button class="btn btn--filter">Delicious</button>
+            <button class="btn btn--filter">Deserts</button>
+            <button class="btn btn--filter">Drinks</button>
+            <button class="btn btn--filter">Main Dishes</button>
+            <button class="btn btn--filter">Salats</button>
+          </div>
+          <div class="btn-wrapper btn-wrapper--end">
+            <form class="picks__form">
+              <select class="picks__select" name="type" id="type">
+                <option value="types">Food types</option>
+                <option value="burgers">Burgers</option>
+                <option value="pizza">Pizza</option>
+                <option value="pasta">Pasta</option>
+                <option value="baking">Baking</option>
+                <option value="cooking">Cooking</option>
+              </select>
+              <select class="picks__select" name="sort" id="sort">
+                <option value="sort">Sort by</option>
+                <option value="new">New</option>
+                <option value="popular">Popular</option>
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+              </select>
+            </form>
+          </div>
         </div>
-    <div class="picks__list">
-        <div class="picks__item">
+        <div class="picks__list">
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-1.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-1.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/salvador-dali.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <svg width="28" height="25" aria-label="location" role="img">
+                  <use href="assets/images/icons/sprite.svg#icon-salvador-dali"></use>
+                </svg>
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-3.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-3.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Living Vase 01 by Lanz...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/b.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-4.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-4.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/g.svg" alt="location" width="23" height="23">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/g.svg" alt="Salvador Dali restaurant logo" width="23" height="23">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-5.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-5.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/la-la-pizza.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/la-la-pizza.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-6.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-6.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/c.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/c.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-2.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-2.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/gordons.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/gordons.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-3.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-3.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Living Vase 01 by Lanz...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/b.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/b.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
-        </div>
-        <div class="picks__item">
+          </div>
+          <div class="picks__item">
             <div class="picks__image">
-                <img src="images/content/dish-1.jpg" alt="dish" width="297" height="290">
-                <div class="picks__marks">
-                    <div class="picks__time">
-                        <img src="images/icons/fire.svg" alt="location" width="20" height="20">
-                        05 : 12 : 07 : 45
-                    </div>
-                    <div class="picks__likes">
-                        <img src="images/icons/heart.svg" alt="location" width="20" height="20">
-                        351
-                    </div>
+              <img src="assets/images/content/dish-1.webp" alt="dish" width="297" height="290">
+              <div class="picks__marks">
+                <div class="picks__time">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-blue-flame"></use>
+                  </svg>
+                  05 : 12 : 07 : 45
                 </div>
+                <div class="picks__likes">
+                  <svg width="20" height="20" aria-label="location" role="img">
+                    <use href="assets/images/icons/sprite.svg#icon-heart"></use>
+                  </svg>
+                  351
+                </div>
+              </div>
             </div>
             <div class="picks__quote">"Hamlet Contemplates Yorick's...</div>
             <div class="picks__info">
-                <div class="picks__logo">
-                    <img src="images/icons/salvador-dali.svg" alt="location" width="28" height="25">
-                </div>
-                <div class="picks__block">
-                    <div class="picks__type">Restorant</div>
-                    <div class="picks__name">Salvador Dali</div>
-                </div>
-                <div class="picks__price">$2.70</div>
+              <div class="picks__logo">
+                <img src="images/icons/salvador-dali.svg" alt="Salvador Dali restaurant logo" width="28" height="25">
+              </div>
+              <div class="picks__block">
+                <div class="picks__type">Restorant</div>
+                <div class="picks__name">SalvadorDali</div>
+              </div>
+              <div class="picks__price">$2.70</div>
             </div>
             <a href="#" class="btn btn--secondary btn--full">$12.70</a>
+          </div>
         </div>
-    </div>
-    <div class="btn-wrapper btn-wrapper--center">
-        <button class="btn btn--strong btn--secondary">Load more</button>
-    </div>
-</section>
-
-</main>
-    
-    
-
+        <div class="btn-wrapper btn-wrapper--center">
+          <button class="btn btn--strong btn--secondary">Load More</button>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer container">
-        <div class="footer__logo">
-            <a href="index.html">
-                <img src="images/icons/logo.svg" alt="Deliverlay footer logo" width="201" height="46">
-            </a>
-            <p class="footer__description">Lorem ipsum dolor sit amet,consectetur
-                adipisicing elit. Quis non, fugit totam vel
-                laboriosam vitae.
-            </p>
-            <ul class="social">
-                <li class="social__item"><a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitch.svg" alt="twitch" width="24" height="24"></a>
-                </li>
-                <li class="social__item"><a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/google.svg" alt="google" width="24" height="24"></a>
-                </li>
-                <li class="social__item"><a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
-                    <img src="images/icons/twitter.svg" alt="twitter" width="24" height="24"></a>
-                </li>
-                <li class="social__item"><a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
-                    <img src="images/icons/facebook.svg" alt="facebook" width="24" height="24"></a>
-                </li>
-            </ul>
+      <div class="footer__logo">
+        <img src="images/icons/logo.svg" alt="Deliverlay logo" width="201" height="46">
+        <p class="footer__description">
+          Lorem ipsum dolor sit amet,consectetur
+           adipisicing elit. Quis non, fugit totam vel
+            laboriosam vitae.
+        </p>
+        <ul class="social">
+          <li>
+            <a href="https://www.twitch.tv" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitch" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitch"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://google.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="google" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-google"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" class="btn btn--border btn--social">
+              <svg width="24" height="24" aria-label="twitter" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank" class="btn btn--social">
+              <svg width="24" height="24" aria-label="facebook" role="img">
+                <use href="assets/images/icons/sprite.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-navigation">
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">My Account</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Authors</a></li>
+            <li><a href="#" class="footer-navigation__link">Collection</a></li>
+            <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
+            <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
+          </ul>
         </div>
-        
-        <div class="footer-navigation">
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">My Account</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Authors</a></li>
-                    <li><a href="#" class="footer-navigation__link">Collection</a></li>
-                    <li><a href="#" class="footer-navigation__link">Author Profile</a></li>
-                    <li><a href="#" class="footer-navigation__link">Create Collection</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Resources</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
-                    <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
-                    <li><a href="#" class="footer-navigation__link">Item Details</a></li>
-                    <li><a href="#" class="footer-navigation__link">Activity</a></li>
-                </ul>
-            </div>
-            <div class="footer-navigation__block">
-                <p class="footer-navigation__title">Company</p>
-                <ul class="footer-navigation__list">
-                    <li><a href="#" class="footer-navigation__link">About Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
-                    <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
-                    <li><a href="#" class="footer-navigation__link">Discover</a></li>
-                </ul>
-            </div>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Resources</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">Help & Support</a></li>
+            <li><a href="#" class="footer-navigation__link">Live Auctions</a></li>
+            <li><a href="#" class="footer-navigation__link">Item Details</a></li>
+            <li><a href="#" class="footer-navigation__link">Activity</a></li>
+          </ul>
         </div>
-        <form class="subscribe" action="/subscribe" method="post">
-            <label class="subscribe__label" for="subscribe">Subscribe Us</label>
-            <div class="subscribe__wrapper">
-                <input class="subscribe__input" type="email" id="subscribe" name="email" placeholder="Info@yourgmail.com" required>
-                <button class="subscribe__btn" type="submit">
-                    <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
-                </button>
-            </div>
-        </form>
+        <div class="footer-navigation__block">
+          <p class="footer-navigation__title">Company</p>
+          <ul class="footer-navigation__list">
+            <li><a href="#" class="footer-navigation__link">About Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Contact Us</a></li>
+            <li><a href="#" class="footer-navigation__link">Our Blog</a></li>
+            <li><a href="#" class="footer-navigation__link">Discover</a></li>
+          </ul>
+        </div>
+      </div>
+      <form class="subscribe" action="/subscribe" method="post">
+        <label class="subscribe__label" for="subscribe">Subscribe Us</label>
+        <div class="subscribe__wrapper">
+          <input
+            class="subscribe__input"
+            type="email"
+            id="subscribe"
+            name="email"
+            placeholder="Info@yourgmail.com"
+            required>
+          <button class="subscribe__btn" type="submit">
+              <img src="images/icons/send.svg" class="subscribe__icon" width="24" height="24" alt="get subscribed">
+          </button>
+        </div>
+      </form>
     </footer>
-
-
   </body>
 </html>
