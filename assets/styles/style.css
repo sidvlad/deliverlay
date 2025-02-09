@@ -181,7 +181,7 @@ body {
 .btn--app {
   display: grid;
   grid-template-columns: 44px 1fr;
-  width: 50%;
+  width: 316px;
   background-color: var(--color-grey-4);
   padding: 12px;
   border-radius: 12px;
@@ -325,6 +325,9 @@ body {
 }
 .btn-wrapper--gap-small {
   gap: 12px;
+}
+.btn-wrapper--gap-middle {
+  gap: 15px;
 }
 .btn-wrapper--gap-micro {
   gap: 6px;
@@ -471,7 +474,7 @@ body {
   width: 100%;
   background-color: var(--color-grey-5);
   padding-top: 60px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 .contact__block {
   display: flex;
@@ -537,7 +540,7 @@ body {
   flex-basis: 50%;
   flex-direction: column;
   justify-content: flex-start;
-  row-gap: 24px;
+  row-gap: 23px;
 }
 .details__description {
   margin: 0;
@@ -732,13 +735,30 @@ body {
   background-repeat: no-repeat;
   opacity: 0;
 }
+.form-control--select {
+  position: relative;
+}
+.form-control--select::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 17px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../images/icons/select-arrow.svg");
+  background-position: center;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
 .form-control--select select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 .form-control--textarea {
-  padding-bottom: 11px;
+  padding-bottom: 3px;
 }
 .form-control--textarea textarea {
   min-height: 100px;
@@ -841,7 +861,7 @@ body {
   padding-left: 70px;
 }
 .header-actions > .btn {
-  max-width: 223px;
+  width: 223px;
 }
 
 .header-navigation__list {
@@ -1056,7 +1076,7 @@ body {
 
 .item {
   padding-top: 60px;
-  padding-bottom: 58px;
+  padding-bottom: 57px;
   background-color: var(--color-grey-5);
 }
 
@@ -1143,7 +1163,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 }
 .picks__form {
   display: flex;
@@ -1204,6 +1224,9 @@ body {
   padding: 6px 12px 6px 8px;
   border-radius: 8px;
   background-color: rgba(28, 28, 40, 0.8);
+}
+.picks__likes svg {
+  flex-shrink: 0;
 }
 .picks__list {
   display: flex;
@@ -1308,6 +1331,9 @@ body {
   border-radius: 8px;
   background-color: rgba(28, 28, 40, 0.8);
 }
+.picks__time svg {
+  flex-shrink: 0;
+}
 .picks__type {
   padding-bottom: 2px;
   font-size: 14px;
@@ -1396,6 +1422,7 @@ body {
 }
 .places__like {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   height: 36px;

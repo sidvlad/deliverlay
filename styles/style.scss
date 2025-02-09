@@ -183,7 +183,7 @@ body {
   &--app {
     display: grid;
     grid-template-columns: 44px 1fr;
-    width: 50%;
+    width: 316px;
     background-color: var(--color-grey-4);
     padding: 12px;
     border-radius: 12px;
@@ -327,6 +327,9 @@ body {
   }
   &--gap-small {
     gap: 12px;
+  }
+  &--gap-middle {
+    gap: 15px;
   }
   &--gap-micro {
     gap: 6px;
@@ -475,7 +478,7 @@ body {
   width: 100%;
   background-color: var(--color-grey-5);
   padding-top: 60px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
   &__block {
     display: flex;
     flex-direction: column;
@@ -539,7 +542,7 @@ body {
     flex-basis: 50%;
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: 24px;
+    row-gap: 23px;
   }
   &__description {
     margin: 0;
@@ -734,13 +737,30 @@ body {
       background-repeat: no-repeat;
       opacity: 0;
   }
+  &--select {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      right: 17px;
+      width: 14px;
+      height: 14px;
+      background-image: url("../../images/icons/select-arrow.svg");
+      background-position: center;
+      background-size: 14px 14px;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+  }
   &--select select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
   }
   &--textarea {
-    padding-bottom: 11px;
+    padding-bottom: 3px;
     & textarea {
       min-height: 100px;
     }
@@ -842,7 +862,7 @@ body {
   gap: 24px;
   padding-left: 70px;
   & > .btn {
-    max-width: 223px;
+    width: 223px;
   }
 }
 
@@ -1058,7 +1078,7 @@ body {
 
 .item {
   padding-top: 60px;
-  padding-bottom: 58px;
+  padding-bottom: 57px;
   background-color: var(--color-grey-5);
 }
 
@@ -1144,7 +1164,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
   }
   &__form {
     display: flex;
@@ -1204,6 +1224,9 @@ body {
     padding: 6px 12px 6px 8px;
     border-radius: 8px;
     background-color: rgba(28, 28, 40, 0.8);
+    & svg {
+      flex-shrink: 0;
+    }
   }
   &__list {
     display: flex;
@@ -1306,6 +1329,9 @@ body {
     padding: 6px 12px 6px 8px;
     border-radius: 8px;
     background-color: rgba(28, 28, 40, 0.8);
+    & svg {
+      flex-shrink: 0;
+    }
   }
   &__type {
     padding-bottom: 2px;
@@ -1392,6 +1418,7 @@ body {
   }
   &__like {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     height: 36px;
